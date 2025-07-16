@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Admin Icon/Image -->
+        <ImageView
+            android:id="@+id/imageAdmin"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/recycle_image" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvAdminTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="32dp" />
+
+        <!-- View All Requests -->
+        <Button
+            android:id="@+id/btnViewAllRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 View All Requests"
+            android:textSize="18sp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Update Request Status -->
+        <Button
+            android:id="@+id/btnUpdateRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ Update Request"
+            android:textSize="18sp"
+            android:backgroundTint="#43A047"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add New Recyclable Item -->
+        <Button
+            android:id="@+id/btnAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Add New Item"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Update Recyclable Item -->
+        <Button
+            android:id="@+id/btnUpdateItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✏️ Update Item"
+            android:textSize="18sp"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚪 Logout"
+            android:textSize="18sp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+</ScrollView>
