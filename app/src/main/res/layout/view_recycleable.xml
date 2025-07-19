@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F1F8E9">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Title -->
+    <TextView
+        android:text="Recyclable Items"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#33691E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView to list items with Update button -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

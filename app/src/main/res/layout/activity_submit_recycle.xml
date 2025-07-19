@@ -1,37 +1,91 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="20dp"
-    android:orientation="vertical"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E8F5E9">
 
-    <EditText
-        android:id="@+id/editItemType"
-        android:hint="Item Type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/editAddress"
-        android:hint="Address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/editDate"
-        android:hint="Date (e.g. 2025-07-20)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/editNotes"
-        android:hint="Additional Notes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/btnSubmit"
-        android:text="Submit Request"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp" />
-</LinearLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Header Icon -->
+        <ImageView
+            android:id="@+id/imageHeader"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/recycle_image"
+            android:contentDescription="Recycle Icon"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSubmitTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Recycling Request"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Item Type -->
+        <EditText
+            android:id="@+id/editItemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Type"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup Address"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (e.g. 2025-07-20)"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Notes -->
+        <EditText
+            android:id="@+id/editNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Notes"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:lines="3"
+            android:minLines="3"
+            android:gravity="top|start" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+</ScrollView>

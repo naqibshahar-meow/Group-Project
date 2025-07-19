@@ -27,7 +27,7 @@ public class AdminMainActivity extends AppCompatActivity {
         btnViewAllRequests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, ViewAllRequestsActivity.class);
+                Intent intent = new Intent(AdminMainActivity.this, ViewRequestsActivity.class);
                 startActivity(intent);
             }
         });
