@@ -106,8 +106,13 @@ public class LoginActivity extends AppCompatActivity {
                         SharedPrefManager spm = new SharedPrefManager(getApplicationContext());
                         spm.storeUser(user);
 
-                        finish();
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        // Navigate based on role
+                        if (user.getRole().equalsIgnoreCase("admin")) {
+                            startActivity(new Intent(getApplicationContext(), AdminMainActivity.class));
+                        } else {
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        }
+                        finish(); // Close LoginActivity
                     }
                     else {
                         // server return success but no user info replied
