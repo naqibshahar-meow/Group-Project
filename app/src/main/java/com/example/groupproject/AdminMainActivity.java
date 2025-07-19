@@ -24,7 +24,7 @@ public class AdminMainActivity extends AppCompatActivity {
         btnLogout = findViewById(R.id.btnLogout);
 
         // Set click listeners
-        btnViewAllRequests.setOnClickListener(new View.OnClickListener() {
+       /* btnViewAllRequests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AdminMainActivity.this, ViewRequestsActivity.class);
@@ -54,7 +54,7 @@ public class AdminMainActivity extends AppCompatActivity {
                 Intent intent = new Intent(AdminMainActivity.this, UpdateItemActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override

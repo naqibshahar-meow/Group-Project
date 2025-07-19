@@ -11,9 +11,6 @@ public class SharedPrefManager {
     private static final String KEY_ID = "keyid";
     private static final String KEY_USERNAME = "keyusername";
     private static final String KEY_EMAIL = "keyemail";
-    private static final String KEY_FNAME = "keyfname";
-    private static final String KEY_LNAME = "keylname";
-    private static final String KEY_IMAGE = "keyimage";
     private static final String KEY_TOKEN = "keytoken";
     private static final String KEY_ROLE = "keyrole";
 
@@ -42,9 +39,22 @@ public class SharedPrefManager {
         editor.putInt(KEY_ID, user.getId());
         editor.putString(KEY_USERNAME, user.getUsername());
         editor.putString(KEY_EMAIL, user.getEmail());
-        editor.putString(KEY_FNAME, user.getFirstName());
-        editor.putString(KEY_LNAME, user.getLastName());
-        editor.putString(KEY_IMAGE, user.getImage());
+        editor.putString(KEY_TOKEN, user.getToken());
+        editor.putString(KEY_ROLE, user.getRole());
+        editor.apply();
+    }
+
+    /**
+     * method to let the user login
+     * this method will store the user data in shared preferences
+     * @param user
+     */
+    public void storeUser(User user) {
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(KEY_ID, user.getId());
+        editor.putString(KEY_USERNAME, user.getUsername());
+        editor.putString(KEY_EMAIL, user.getEmail());
         editor.putString(KEY_TOKEN, user.getToken());
         editor.putString(KEY_ROLE, user.getRole());
         editor.apply();
@@ -70,9 +80,6 @@ public class SharedPrefManager {
         user.setId(sharedPreferences.getInt(KEY_ID, -1));
         user.setUsername(sharedPreferences.getString(KEY_USERNAME, null));
         user.setEmail(sharedPreferences.getString(KEY_EMAIL, null));
-        user.setFirstName(sharedPreferences.getString(KEY_FNAME, null));
-        user.setLastName(sharedPreferences.getString(KEY_LNAME, null));
-        user.setImage(sharedPreferences.getString(KEY_IMAGE,null));
         user.setToken(sharedPreferences.getString(KEY_TOKEN, null));
         user.setRole(sharedPreferences.getString(KEY_ROLE, null));
 
@@ -95,9 +102,6 @@ public class SharedPrefManager {
         editor.putInt(KEY_ID, updatedUser.getId());
         editor.putString(KEY_USERNAME, updatedUser.getUsername());
         editor.putString(KEY_EMAIL, updatedUser.getEmail());
-        editor.putString(KEY_FNAME, updatedUser.getFirstName());
-        editor.putString(KEY_LNAME, updatedUser.getLastName());
-        editor.putString(KEY_IMAGE, updatedUser.getImage());
         editor.putString(KEY_TOKEN, updatedUser.getToken());
         editor.putString(KEY_ROLE, updatedUser.getRole());
         editor.apply();
