@@ -1,6 +1,8 @@
 package com.example.groupproject.model;
 
-public class RecyclableItems {
+import java.io.Serializable;
+
+public class RecyclableItems implements Serializable {
     private int item_id;
     private String item_name;
     private double price_per_kg;

@@ -33,11 +33,10 @@
             android:layout_marginBottom="24dp" />
 
         <!-- Item Type -->
-        <EditText
-            android:id="@+id/editItemType"
+        <Spinner
+            android:id="@+id/spinnerItemType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Item Type"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
@@ -52,12 +51,14 @@
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Date -->
+        <!-- Date Picker -->
         <EditText
             android:id="@+id/editDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date (e.g. 2025-07-20)"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:clickable="true"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
@@ -85,7 +86,8 @@
             android:textColor="#FFFFFF"
             android:padding="12dp"
             android:textSize="16sp"
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:onClick="submitClicked"/>
 
     </LinearLayout>
 </ScrollView>
