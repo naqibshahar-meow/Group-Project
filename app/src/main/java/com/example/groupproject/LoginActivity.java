@@ -112,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
                         } else {
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
-                        finish(); // Close LoginActivity
+                        finish();
                     }
                     else {
                         // server return success but no user info replied
