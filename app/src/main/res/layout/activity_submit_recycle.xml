@@ -33,14 +33,18 @@
             android:layout_marginBottom="24dp" />
 
         <!-- Item Type -->
-        <EditText
-            android:id="@+id/editItemType"
+        <Spinner
+            android:id="@+id/spinnerItemType"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Item Type"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+
 
         <!-- Address -->
         <EditText
@@ -52,12 +56,14 @@
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Date -->
+        <!-- Date (uses DatePickerDialog) -->
         <EditText
             android:id="@+id/editDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date (e.g. 2025-07-20)"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:clickable="true"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
             android:layout_marginBottom="12dp" />

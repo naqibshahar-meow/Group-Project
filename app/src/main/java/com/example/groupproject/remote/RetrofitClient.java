@@ -9,7 +9,7 @@ public class RetrofitClient {
      * @param URL REST API URL
      * @return retrofit instance
      */
-    public static Retrofit getClient(String URL) {
+    public static Retrofit getClient(String URL, String token) {
         // first API call, no retrofit instance yet?
         if (retrofit == null) {
             // initialize retrofit
