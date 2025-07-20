@@ -8,7 +8,8 @@
     android:gravity="center"
     android:padding="16dp"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:id="@+id/login">
 
     <!-- App Logo -->
     <ImageView
@@ -75,7 +76,8 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/design_default_color_primary"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="16dp"
+                android:onClick="loginClicked"/>
 
             <!-- Forgot Password Link -->
             <TextView

@@ -14,78 +14,85 @@
 
         <!-- Header Icon -->
         <ImageView
-            android:id="@+id/imageHeader"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@drawable/recycle_image"
-            android:contentDescription="Recycle Icon"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Signup Icon" />
 
         <!-- Title -->
         <TextView
-            android:id="@+id/tvSubmitTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit Recycling Request"
+            android:text="Create Account"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="#2E7D32"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        <!-- Item Type -->
+        <!-- Full Name -->
         <EditText
-            android:id="@+id/editItemType"
+            android:id="@+id/editFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Item Type"
+            android:hint="Full Name"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Address -->
+        <!-- Email -->
         <EditText
-            android:id="@+id/editAddress"
+            android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Pickup Address"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Date -->
+        <!-- Password -->
         <EditText
-            android:id="@+id/editDate"
+            android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date (e.g. 2025-07-20)"
+            android:hint="Password"
+            android:inputType="textPassword"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
             android:layout_marginBottom="12dp" />
 
-        <!-- Notes -->
+        <!-- Confirm Password -->
         <EditText
-            android:id="@+id/editNotes"
+            android:id="@+id/editConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Additional Notes"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
-            android:layout_marginBottom="20dp"
-            android:lines="3"
-            android:minLines="3"
-            android:gravity="top|start" />
+            android:layout_marginBottom="20dp" />
 
-        <!-- Submit Button -->
+        <!-- Signup Button -->
         <Button
-            android:id="@+id/btnSubmit"
+            android:id="@+id/btnSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit Request"
+            android:text="Sign Up"
             android:backgroundTint="#388E3C"
             android:textColor="#FFFFFF"
             android:padding="12dp"
             android:textSize="16sp"
             android:elevation="4dp" />
 
+        <!-- Already have an account -->
+        <TextView
+            android:id="@+id/tvLoginRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="#2E7D32"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" />
     </LinearLayout>
 </ScrollView>

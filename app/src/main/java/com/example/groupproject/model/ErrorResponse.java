@@ -2,8 +2,8 @@ package com.example.groupproject.model;
 
 import java.lang.Error;
 
-public class FailLogin {
-
+public class ErrorResponse {
+    // fail login
     private String status;
     private Error error;
 

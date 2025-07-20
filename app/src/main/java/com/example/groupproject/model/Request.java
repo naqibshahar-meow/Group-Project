@@ -1,6 +1,8 @@
 package com.example.groupproject.model;
 
-public class Request {
+import java.io.Serializable;
+
+public class Request implements Serializable {
     private int request_id;
     private int user_id;
     private int item_id;
