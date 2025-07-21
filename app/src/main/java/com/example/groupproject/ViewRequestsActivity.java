@@ -26,6 +26,7 @@ import retrofit2.Response;
 
 public class ViewRequestsActivity extends AppCompatActivity {
 
+    //initialize
     RecyclerView recyclerView;
     ProgressBar progressBar;
     TextView tvNoData, tvUserInfo;
