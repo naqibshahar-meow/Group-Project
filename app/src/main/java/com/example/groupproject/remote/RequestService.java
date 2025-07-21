@@ -2,6 +2,8 @@ package com.example.groupproject.remote;
 
 import com.example.groupproject.model.Request;
 
+import java.util.List;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -26,4 +28,16 @@ public interface RequestService {
             @Field("status") String status,
             @Field("notes") String notes
     );
+
+    @GET("requests")
+    Call<List<Request>> getAllRequests(@Header("api-key") String apiKey);
+
+    @FormUrlEncoded
+    @POST("requests/{request_id}")
+    Call<Request> updateRequestStatus(
+            @Header("api-key") String apiKey,
+            @Path("request_id") int requestId,
+            @Field("status") String status
+    );
+
 }

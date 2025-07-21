@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/tvDetailUser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User ID" />
+    <TextView android:id="@+id/tvDetailItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Item ID" />
+    <TextView android:id="@+id/tvDetailAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Address" />
+    <TextView android:id="@+id/tvDetailDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date" />
+    <TextView android:id="@+id/tvDetailStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status" />
+    <TextView android:id="@+id/tvDetailNotes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notes" />
+
+    <Button android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cancel Request" android:layout_marginTop="20dp" />
+</LinearLayout>
+

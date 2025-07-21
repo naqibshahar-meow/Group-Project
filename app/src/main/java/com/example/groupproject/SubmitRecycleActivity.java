@@ -42,7 +42,7 @@ public class SubmitRecycleActivity extends AppCompatActivity {
     private String token;
 
     List<RecyclableItems> itemList = new ArrayList<>();
-    String apiKey = "128bd249-4fce-4701-a865-0dd8e159ad8d";
+    String apiKey = "ea45aef4-913f-4dd2-84e2-66734d6b9296";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

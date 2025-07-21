@@ -1,11 +1,9 @@
 package com.example.groupproject;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,6 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.groupproject.admin.AdminMainActivity;
 import com.example.groupproject.model.FailLogin;
 import com.example.groupproject.model.User;
 import com.example.groupproject.remote.ApiUtils;

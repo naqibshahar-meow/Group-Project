@@ -17,15 +17,27 @@
         android:textColor="#33691E"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="8dp" />
+
+    <!-- New: Info text below title -->
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logged in as: -"
+        android:textSize="16sp"
+        android:textColor="#558B2F"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
 
     <!-- RecyclerView to show list of requests -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerRequests"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tvTitle"
-        android:layout_marginTop="12dp" />
+        android:layout_below="@id/tvUserInfo"
+        android:layout_marginTop="8dp" />
 
     <!-- Loading ProgressBar -->
     <ProgressBar

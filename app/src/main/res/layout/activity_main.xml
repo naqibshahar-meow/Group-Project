@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#D32F2F"
-            android:onClick=""
+            android:onClick="logoutClicked"
             android:elevation="4dp"
             android:padding="12dp"
             android:text="🚪 Logout"
